@@ -1,0 +1,160 @@
+{{ 'customer-review.css' | asset_url | stylesheet_tag }}
+
+
+<div class="riview">
+  <div class="page-width review__content-center">
+
+    <h3 class="review__title">
+      <span class="title-top">What Customer Say</span>
+      with “What Mamas Think About 8 Sheep Organics
+    </h3>
+    <div class="review__star-content">
+      <div class="review__star">
+        <img
+          src="{{ 'star-icon.svg' | asset_url }}"
+          alt=""
+          class="star-svg">
+        <img
+          src="{{ 'star-icon.svg' | asset_url }}"
+          alt=""
+          class="star-svg">
+        <img
+          src="{{ 'star-icon.svg' | asset_url }}"
+          alt=""
+          class="star-svg">
+        <img
+          src="{{ 'star-icon.svg' | asset_url }}"
+          alt=""
+          class="star-svg">
+        <img
+          src="{{ 'star-icon.svg' | asset_url }}"
+          alt=""
+          class="star-svg">
+      </div>
+      <span class="star-text">4.8/5</span>
+    </div>
+
+    <p class="review__count">
+      Based on 1,758 Reviews
+    </p>
+    <div class="review__slider-container">
+      <div class="review__content-slider">
+        {% comment %} Single Content {% endcomment %}
+        <div class="review__content">
+          <p class="review__text">
+            <strong class="content-title">This lotion is magic</strong>
+            <br>
+            Late in my second trimester, I started having severe hip pain while sleeping on my side. I was shocked that this lotion alleviated most of that pain the first time I used it. Now, halfway through my third trimester, I use it every night and sleep better than I have in months. It's really amazing!
+          </p>
+          <p class="customer-name">
+            - Rachel H.
+            <span class="status">Verified Buyer</span>
+          </p>
+        </div>
+        {% comment %} Single Content {% endcomment %}
+        <div class="review__content">
+          <p class="review__text">
+            <strong class="content-title">Great product even if you’re not pregnant</strong>
+            <br>
+            I’ve been using the leg cream for some time now, I’m not pregnant but have horrible restless leg syndrome. It’s the only product that helps me get some rest. My grandmother suffers from fibromyalgia a
+          </p>
+          <p class="customer-name">
+            - Aquila N.
+            <span class="status">Varified Buyer</span>
+          </p>
+
+        </div>
+        {% comment %} Single Content {% endcomment %}
+        <div class="review__content">
+          <p class="review__text">
+            <strong class="content-title">Great product even if you’re not pregnant</strong>
+            <br>
+            I’ve been using the leg cream for some time now, I’m not pregnant but have horrible restless leg syndrome. It’s the only product that helps me get some rest. My grandmother suffers from fibromyalgia a
+          </p>
+          <p class="customer-name">
+            - Aquila N.
+            <span class="status">Varified Buyer</span>
+          </p>
+
+        </div>
+        {% comment %} Single Content {% endcomment %}
+        <div class="review__content">
+          <p class="review__text">
+            <strong class="content-title">Great product even if you’re not pregnant</strong>
+            <br>
+            I’ve been using the leg cream for some time now, I’m not pregnant but have horrible restless leg syndrome. It’s the only product that helps me get some rest. My grandmother suffers from fibromyalgia a
+          </p>
+          <p class="customer-name">
+            - Aquila N.
+            <span class="status">Varified Buyer</span>
+          </p>
+
+        </div>
+        {% comment %} Single Content {% endcomment %}
+        <div class="review__content">
+          <p class="review__text">
+            <strong class="content-title">Great product even if you’re not pregnant</strong>
+            <br>
+            I’ve been using the leg cream for some time now, I’m not pregnant but have horrible restless leg syndrome. It’s the only product that helps me get some rest. My grandmother suffers from fibromyalgia a
+          </p>
+          <p class="customer-name">
+            - Aquila N.
+            <span class="status">Varified Buyer</span>
+          </p>
+
+        </div>
+        {% comment %} Single Content {% endcomment %}
+        <div class="review__content">
+          <p class="review__text">
+            <strong class="content-title">Great product even if you’re not pregnant</strong>
+            <br>
+            I’ve been using the leg cream for some time now, I’m not pregnant but have horrible restless leg syndrome. It’s the only product that helps me get some rest. My grandmother suffers from fibromyalgia a
+          </p>
+          <p class="customer-name">
+            - Aquila N.
+            <span class="status">Varified Buyer</span>
+          </p>
+
+        </div>
+
+      </div>
+      <div class="review__button-box">
+        <a href="#" class="view-all-link">View all</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Customer review",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "default": "Multicolumn",
+        "label": "t:sections.multicolumn.settings.title.label"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "Column",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Customer review"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,148 @@
+.hero {
+	position: relative;
+	width: auto;
+	max-width: 100%;
+	/* height: 750px; */
+	padding-top: 130px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-bottom: 168px;
+}
+
+/* .hero__img {
+	position: absolute;
+	inset: 0;
+	z-index: -2;
+	top: 10px;
+	height: -webkit-fill-available;
+	width: 100%;
+}
+
+.hero__overlay {
+	position: absolute;
+	inset: 0;
+	background-image: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0.63),
+		rgba(255, 255, 255, 0.1)
+	);
+	z-index: -1;
+} */
+
+.hero__content-box {
+	padding-top: 56px;
+	max-width: 55%;
+}
+
+.hero__title {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 65px;
+	line-height: 79px;
+	color: #ffffff;
+}
+
+.hero__text {
+	margin-bottom: 35px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: var(--white);
+}
+
+.hero__list-box {
+	margin-bottom: 52px;
+}
+
+.hero__list-item {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 32px;
+	color: var(--white);
+	display: flex;
+	align-items: center;
+	gap: 12.5px;
+}
+
+.shop-btn {
+	width: 290px;
+	height: 63px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: var(--light-black);
+	background-color: var(--white);
+	border-radius: 5px;
+	display: grid;
+	place-items: center;
+	transition: all 0.3s ease;
+}
+
+.shop-btn:hover {
+	color: var(--white);
+	background-color: var(--light-black);
+}
+
+@media screen and (max-width: 768px) {
+	/* .hero {
+		padding-top: 95px;
+		height: 350px;
+		background-position: 90% -42%;
+		background-size: 169% 130%;
+	} */
+
+	/* .hero {
+		padding-top: 95px;
+		max-height: 415px;
+		background-position: right;
+		position: relative;
+	} */
+
+	.hero {
+		padding-top: 100px;
+		background-position: right 25% center;
+		padding-bottom: 50px;
+	}
+	.hero__content-box {
+		max-width: 100%;
+	}
+	.hero__title {
+		font-weight: 600;
+		font-size: 30px;
+		line-height: 37px;
+	}
+	.hero__text {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 24px;
+		margin-bottom: 20px;
+	}
+
+	.hero__list-box {
+		margin-bottom: 20px;
+	}
+
+	.hero__list-item {
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 24px;
+		gap: 5px;
+		align-items: center;
+	}
+
+	.hero__list-item:last-child {
+		display: none;
+	}
+
+	.hero__text--bottom {
+		display: none;
+	}
+
+	.shop-btn {
+		width: 100%;
+	}
+}

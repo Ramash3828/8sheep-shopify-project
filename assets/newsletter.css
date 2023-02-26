@@ -1,0 +1,135 @@
+.newsletter {
+	padding: 64px 0;
+	background-color: #b8e5ff;
+}
+
+.newsletter__content-box {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+/* .newsletter__content-left {
+	flex: 1;
+} */
+.newsletter__content-right {
+	/* flex: 1; */
+	justify-self: center;
+}
+.newsletter__title {
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 37px;
+	text-transform: uppercase;
+	color: var(--black);
+	margin-bottom: 15px;
+}
+.newsletter__text {
+	margin-bottom: 30px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: capitalize;
+	color: var(--black);
+}
+
+.form__wraper {
+	position: relative;
+	background-color: var(--white);
+	width: 440px;
+	height: 50px;
+}
+
+.input {
+	font-size: 16px;
+	border: 0;
+	outline: none;
+	background-color: transparent;
+	position: absolute;
+	width: 68%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding: 0 18px;
+}
+
+::placeholder {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: capitalize;
+	color: #838282;
+}
+
+.form__btn {
+	width: 32%;
+	height: 100%;
+	border: 0;
+	outline: none;
+	background-color: var(--light-black);
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: uppercase;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.form__btn:hover {
+	opacity: 0.6;
+}
+
+.newsletter__title-join {
+	margin-bottom: 20px;
+}
+.social__icon-box {
+	width: 388px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+	.newsletter {
+		padding-top: 19px;
+		padding-bottom: 27px;
+	}
+	.newsletter__content-box {
+		grid-template-columns: 1fr;
+	}
+	.newsletter__content-right {
+		display: none;
+	}
+	.newsletter__content-left {
+		text-align: center;
+	}
+	.newsletter__title {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 8px;
+	}
+	.newsletter__text {
+		margin-bottom: 22px;
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.form__wraper {
+		width: 100%;
+		height: 40px;
+	}
+	.form__btn {
+		font-size: 16px;
+		line-height: 19.5px;
+	}
+	.input {
+		font-size: 14px;
+	}
+	::placeholder {
+		font-size: 14px;
+		line-height: 17px;
+	}
+}

@@ -1,0 +1,62 @@
+{
+  "sections": {
+    "1133ef1d-c5fc-4189-a21b-6e338ee00579": {
+      "type": "hero",
+      "settings": {
+        "title": "Multicolumn"
+      }
+    },
+    "5a80f871-73e4-4485-b59d-ac66d32424ba": {
+      "type": "brand-logo",
+      "settings": {
+        "title": "Multicolumn"
+      }
+    },
+    "d4a46e80-0a42-4686-b7ba-cd9fe0a680f8": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Multicolumn"
+      }
+    },
+    "028726a0-eb99-4153-bf5f-f7b4b8974283": {
+      "type": "customer-review",
+      "settings": {
+        "title": "Multicolumn"
+      }
+    },
+    "83ddd71c-b06e-49a4-8651-bccefee79678": {
+      "type": "videos",
+      "settings": {
+        "title": "Multicolumn"
+      }
+    },
+    "81ada0de-62ce-4746-ac9a-77cba669cdf7": {
+      "type": "text-with-button",
+      "settings": {
+        "title": "Multicolumn"
+      }
+    },
+    "4a626e57-b83a-4d12-a3e9-640f655ba55c": {
+      "type": "image-with-text",
+      "settings": {
+        "title": "Multicolumn"
+      }
+    },
+    "27e73360-8b34-43b7-a66f-a8c226977827": {
+      "type": "newsletter",
+      "settings": {
+        "title": "Multicolumn"
+      }
+    }
+  },
+  "order": [
+    "1133ef1d-c5fc-4189-a21b-6e338ee00579",
+    "5a80f871-73e4-4485-b59d-ac66d32424ba",
+    "d4a46e80-0a42-4686-b7ba-cd9fe0a680f8",
+    "028726a0-eb99-4153-bf5f-f7b4b8974283",
+    "83ddd71c-b06e-49a4-8651-bccefee79678",
+    "81ada0de-62ce-4746-ac9a-77cba669cdf7",
+    "4a626e57-b83a-4d12-a3e9-640f655ba55c",
+    "27e73360-8b34-43b7-a66f-a8c226977827"
+  ]
+}

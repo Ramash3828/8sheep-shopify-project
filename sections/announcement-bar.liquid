@@ -1,0 +1,86 @@
+{% comment %}
+{% if section.settings.on %}
+<div class="announcement__inner">
+{{ section.settings.text }}
+<div class="announcement__close">
+{% render 'icon-close' %}
+</div>
+</div>
+{% endif %}
+{% endcomment %}
+
+<div class="announcement-bar">
+  <p class="announcement-bar__text">
+    Free Shipping
+    <span class="announcement-bar__price">
+      over $50
+    </span>
+  </p>
+  <p class=" announcement-bar__text-mobile">
+    <span>Only $11 Away From</span>
+    <span class="announcement-bar__yellow">
+      Free Shipping!
+    </span>
+  </p>
+</div>
+
+{% schema %}
+  {
+    "name": "t:sections.announcement-bar.name",
+    "tag": "div",
+    "class": "announcement",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "on",
+        "default": true,
+        "label": "Show announcement"
+      }, {
+        "type": "text",
+        "id": "text",
+        "label": "t:sections.header.settings.enable_sticky_header.label"
+      }
+    ]
+  }
+{% endschema %}
+
+<style>
+  .announcement-bar {
+    padding: 16.5px;
+    text-align: center;
+    background-color: var(--light-black);
+    z-index: 44;
+
+    position: relative;
+    max-width: 100%;
+    width: -webkit-fill-available;
+  }
+
+  .announcement-bar__yellow,
+  .announcement-bar__price,
+  .announcement-bar__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--yellow);
+  }
+
+  .announcement-bar__text-mobile,
+  .announcement-bar__price {
+    color: var(--white);
+  }
+  .announcement-bar__text-mobile {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    .announcement-bar {
+      padding: 11.5px 0;
+    }
+    .announcement-bar__text {
+      display: none;
+    }
+    .announcement-bar__text-mobile {
+      display: block;
+    }
+  }
+</style>

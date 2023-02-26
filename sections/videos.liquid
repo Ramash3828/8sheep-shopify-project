@@ -1,0 +1,143 @@
+{{ 'videos.css' | asset_url | stylesheet_tag }}
+
+<div class="videos">
+  <div class="page-width">
+    <h2 class="videos__title">
+      See 8 Sheep in action
+    </h2>
+    <div class="videos__content-box">
+      <div class="videos__item">
+        <img
+          src="{{ 'video-img1.png' | asset_url }}"
+          alt=""
+          class="videos__img">
+        <a href="#" class="videos__link">
+          <img
+            src="{{ 'video-icon.svg' | asset_url }}"
+            alt=""
+            class="videos__icon">
+        </a>
+      </div>
+      <div class="videos__item">
+        <img
+          src="{{ 'video-img2.png' | asset_url }}"
+          alt=""
+          class="videos__img">
+        <a href="#" class="videos__link">
+          <img
+            src="{{ 'video-icon.svg' | asset_url }}"
+            alt=""
+            class="videos__icon">
+        </a>
+      </div>
+      <div class="videos__item">
+        <img
+          src="{{ 'video-img3.png' | asset_url }}"
+          alt=""
+          class="videos__img">
+        <a href="#" class="videos__link">
+          <img
+            src="{{ 'video-icon.svg' | asset_url }}"
+            alt=""
+            class="videos__icon">
+        </a>
+      </div>
+      <div class="videos__item">
+        <img
+          src="{{ 'video-img4.png' | asset_url }}"
+          alt=""
+          class="videos__img">
+        <a href="#" class="videos__link">
+          <img
+            src="{{ 'video-icon.svg' | asset_url }}"
+            alt=""
+            class="videos__icon">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="videos__content-mobile">
+    <div class="videos__item">
+      <img
+        src="{{ 'video-img1.png' | asset_url }}"
+        alt=""
+        class="videos__img">
+      <a href="#" class="videos__link">
+        <img
+          src="{{ 'video-icon.svg' | asset_url }}"
+          alt=""
+          class="videos__icon">
+      </a>
+    </div>
+    <div class="videos__item">
+      <img
+        src="{{ 'video-img2.png' | asset_url }}"
+        alt=""
+        class="videos__img">
+      <a href="#" class="videos__link">
+        <img
+          src="{{ 'video-icon.svg' | asset_url }}"
+          alt=""
+          class="videos__icon">
+      </a>
+    </div>
+    <div class="videos__item">
+      <img
+        src="{{ 'video-img3.png' | asset_url }}"
+        alt=""
+        class="videos__img">
+      <a href="#" class="videos__link">
+        <img
+          src="{{ 'video-icon.svg' | asset_url }}"
+          alt=""
+          class="videos__icon">
+      </a>
+    </div>
+    <div class="videos__item">
+      <img
+        src="{{ 'video-img4.png' | asset_url }}"
+        alt=""
+        class="videos__img">
+      <a href="#" class="videos__link">
+        <img
+          src="{{ 'video-icon.svg' | asset_url }}"
+          alt=""
+          class="videos__icon">
+      </a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Vedio",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "default": "Multicolumn",
+        "label": "t:sections.multicolumn.settings.title.label"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "Column",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Vedio"
+      }
+    ]
+  }
+{% endschema %}

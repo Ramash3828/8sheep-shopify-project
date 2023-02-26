@@ -1,0 +1,61 @@
+{{ 'text-with-button.css' | asset_url | stylesheet_tag }}
+<div class="testmonial">
+  <div class="page-width">
+    <div class="testmonial__content">
+      <h4 class="testmonial__top-text">More than</h4>
+      <h2 class="testmonial__user-count">
+        <img
+          src="{{ 'user-icon.svg' | asset_url }}"
+          alt=""
+          class="testmonial__user-img">
+        <span class="testmonial__count">168,000</span>
+      </h2>
+      <p class="testmonial__heading">What Customer Say” with “What Mamas Think About 8 Sheep Organics</p>
+      <p class="testmonial__text">Did you know that
+        <strong>78% of women suffer from insomnia</strong>
+        during their pregnancy?
+        It's a familiar feeling for most pregnant moms.
+                          Night after night, you toss and turn, not being able to sleep for more than 2 hours at a time.
+                          You're exhausted, but you just can’t seem to fall or stay asleep!
+                           That's why
+        <strong>we created the "sleepy" lotion, an organic lotion specially made to help with pregnancy insomnia. This lotion has helped over 116,000+ mamas sleep through the night!</strong>
+      </p>
+      <a href="#" class="shop-now-btn">shop now</a>
+    </div>
+  </div>
+
+</div>
+
+{% schema %}
+  {
+    "name": "Text with button",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "default": "Multicolumn",
+        "label": "t:sections.multicolumn.settings.title.label"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "Column",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Text with button"
+      }
+    ]
+  }
+{% endschema %}

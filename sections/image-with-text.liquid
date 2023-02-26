@@ -1,0 +1,71 @@
+{{ 'image-with-text.css' | asset_url | stylesheet_tag }}
+
+<div class="grantee">
+  <div class="page-width">
+    <div class="grantee__content-box">
+      <div class="grantee__img-box">
+        <div class="grantee__title-mobile">
+          <p class="grantee__top-text">
+            TRY OUR PRODUCTS RISK-FREE
+          </p>
+          <h2 class="grantee__title">100% Happiness Guarantee</h2>
+        </div>
+        <img
+          src="{{ 'badge-logo.png' | asset_url }}"
+          alt=""
+          class="grantee__img">
+      </div>
+      <div class="grantee__details-box">
+        <div class="grantee__title-desktop">
+          <p class="grantee__top-text">
+            TRY OUR PRODUCTS RISK-FREE
+          </p>
+          <h2 class="grantee__title">100% Happiness Guarantee</h2>
+        </div>
+
+        <div class="grantee__text">
+          We want every mama to be 100% happy with their purchase. That's why all of our products come with a 100% happiness guarantee!
+          <br/> <br>
+          If our products have not helped, or are not to your liking, no hard feelings!
+          <br> <br>
+          Just send me an email at contact@8sheep.com with your order number and I can provide an exchange, or get you a full refund.
+        </div>
+        <a href="#" class="shop-now-btn grantee-btn">shop now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Image with text",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "default": "Multicolumn",
+        "label": "t:sections.multicolumn.settings.title.label"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "Column",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image with text"
+      }
+    ]
+  }
+{% endschema %}

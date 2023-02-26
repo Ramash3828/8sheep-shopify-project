@@ -1,0 +1,109 @@
+{{ 'brand.css' | asset_url | stylesheet_tag }}
+<div class="brand">
+  <div class="page-width">
+    <div class="brand__content-box">
+      <h2 class="brand__title">You might have seen us on</h2>
+      <div class="brand__logo-content">
+        <div class="brand__item">
+          <img
+            src="{{'expect-logo.png' | asset_url}}"
+            alt=""
+            class="brand__img">
+        </div>
+        <div class="brand__item">
+          <img
+            src="{{'babycenter-logo.png' | asset_url}}"
+            alt=""
+            class="brand__img">
+        </div>
+        <div class="brand__item">
+          <img
+            src="{{'pregnancy_podcast_logo1-1.png' | asset_url}}"
+            alt=""
+            class="brand__img">
+        </div>
+        <div class="brand__item">
+          <img
+            src="{{'birth-logo.png' | asset_url}}"
+            alt=""
+            class="brand__img">
+        </div>
+        <div class="brand__item">
+          <img
+            src="{{'ovia-health-logo.png' | asset_url}}"
+            alt=""
+            class="brand__img">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="brand-mobile">
+  <h2 class="brand__title">You might have seen us on</h2>
+  <div class="brand__logo-mobile">
+    <div class="brand__item">
+      <img
+        src="{{'expect-logo.png' | asset_url}}"
+        alt=""
+        class="brand__img">
+    </div>
+    <div class="brand__item">
+      <img
+        src="{{'babycenter-logo.png' | asset_url}}"
+        alt=""
+        class="brand__img">
+    </div>
+    <div class="brand__item">
+      <img
+        src="{{'pregnancy_podcast_logo1-1.png' | asset_url}}"
+        alt=""
+        class="brand__img">
+    </div>
+    <div class="brand__item">
+      <img
+        src="{{'birth-logo.png' | asset_url}}"
+        alt=""
+        class="brand__img">
+    </div>
+    <div class="brand__item">
+      <img
+        src="{{'ovia-health-logo.png' | asset_url}}"
+        alt=""
+        class="brand__img">
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Brand-logo",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "default": "Multicolumn",
+        "label": "t:sections.multicolumn.settings.title.label"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "Column",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Brand-logo"
+      }
+    ]
+  }
+{% endschema %}

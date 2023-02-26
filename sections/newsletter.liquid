@@ -1,0 +1,95 @@
+{{ 'newsletter.css' | asset_url | stylesheet_tag }}
+
+
+<div class="newsletter">
+  <div class="page-width">
+    <div class="newsletter__content-box">
+      <div class="newsletter__content-left">
+        <h2 class="newsletter__title">join our Newsletter</h2>
+        <p class="newsletter__text">
+          Sign up for pregnancy advice, tips, exclusive offers and more!
+        </p>
+        <form action="" class="form">
+          <div class="form__wraper">
+            <input
+              type="text"
+              placeholder="your email here.."
+              class="input">
+            <button type="submit" class="form__btn">sign up</button>
+          </div>
+        </form>
+      </div>
+      <div class="newsletter__content-right">
+        <h2 class="newsletter__title newsletter__title-join">
+          join our community
+        </h2>
+        <div class="social__icon-box">
+          <a href="#" class="social__link">
+            <img
+              src="{{'facebook-icon.svg' | asset_url}}"
+              alt=""
+              class="social__img">
+          </a>
+          <a href="#" class="social__link">
+            <img
+              src="{{'instagram-icon.svg' | asset_url}}"
+              alt=""
+              class="social__img">
+          </a>
+          <a href="#" class="social__link">
+            <img
+              src="{{'printrste-icon.svg' | asset_url}}"
+              alt=""
+              class="social__img">
+          </a>
+          <a href="#" class="social__link">
+            <img
+              src="{{'youtube-icon.svg' | asset_url}}"
+              alt=""
+              class="social__img">
+          </a>
+          <a href="#" class="social__link">
+            <img
+              src="{{'tiktok-icon.svg' | asset_url}}"
+              alt=""
+              class="social__img">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Newsletter",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "default": "Multicolumn",
+        "label": "t:sections.multicolumn.settings.title.label"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "Column",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Newsletter"
+      }
+    ]
+  }
+{% endschema %}

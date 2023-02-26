@@ -1,0 +1,336 @@
+{{ 'featured-collection.css' | asset_url | stylesheet_tag }}
+
+<div class="featured-collection">
+  <div class="page-width">
+    <div class="featured-collection__heading">
+      <p class="featured-collection__title">Featured collection</p>
+
+      <a href="#" class="featured-collection__view-btn">View all</a>
+
+    </div>
+    <div class="featured-collection__product-content">
+      {% comment %} single Item {% endcomment %}
+      <div class="featured-collection__item">
+        <div class="featured-collection__img-box featured-collection__img--first">
+          <a href="#" class="product-link">
+            <img
+              src="{{ 'product1.png' | asset_url }}"
+              alt=""
+              class="featured-collection__img">
+          </a>
+        </div>
+        <h4 class="featured-collection__title">Organic Sleepy Body Lotion</h4>
+        <div class="star-reviews">
+          <div class="star-reviews__box">
+            <img
+              src="{{ 'star-icon.svg' | asset_url }}"
+              alt=""
+              class="star-svg">
+            <img
+              src="{{ 'star-icon.svg' | asset_url }}"
+              alt=""
+              class="star-svg">
+            <img
+              src="{{ 'star-icon.svg' | asset_url }}"
+              alt=""
+              class="star-svg">
+            <img
+              src="{{ 'star-icon.svg' | asset_url }}"
+              alt=""
+              class="star-svg">
+            <img
+              src="{{ 'star-icon.svg' | asset_url }}"
+              alt=""
+              class="star-svg">
+          </div>
+          <span class="star-svg__review">76 reviews</span>
+        </div>
+
+        <div class="product-footer">
+          <div class="product-footer__price">
+            <span class="product-footer__off-price">$50
+            </span>
+            <span class="product-footer__regular-price">$39</span>
+          </div>
+          <a href="#" class="add-btn">ADD</a>
+        </div>
+      </div>
+      {% comment %} single Item {% endcomment %}
+      <div class="featured-collection__item">
+        <div class="featured-collection__img-box">
+          <a href="#" class="product-link">
+            <img
+              src="{{ 'product2.png' | asset_url }}"
+              alt=""
+              class="featured-collection__img">
+          </a>
+        </div>
+        <h4 class="featured-collection__title">Organic Sleepy Body Lotion</h4>
+        <div class="star-reviews">
+          <div class="star-reviews__box">
+            <img
+              src="{{ 'star-icon.svg' | asset_url }}"
+              alt=""
+              class="star-svg">
+            <img
+              src="{{ 'star-icon.svg' | asset_url }}"
+              alt=""
+              class="star-svg">
+            <img
+              src="{{ 'star-icon.svg' | asset_url }}"
+              alt=""
+              class="star-svg">
+            <img
+              src="{{ 'star-icon.svg' | asset_url }}"
+              alt=""
+              class="star-svg">
+            <img
+              src="{{ 'star-icon.svg' | asset_url }}"
+              alt=""
+              class="star-svg">
+          </div>
+          <span class="star-svg__review">76 reviews</span>
+        </div>
+
+        <div class="product-footer">
+          <div class="product-footer__price">
+            <span class="product-footer__off-price">$50
+            </span>
+            <span class="product-footer__regular-price">$39</span>
+          </div>
+          <a href="#" class="add-btn">ADD</a>
+        </div>
+      </div>
+      {% comment %} single Item {% endcomment %}
+      <div class="featured-collection__item">
+        <div class="featured-collection__img-box">
+          <a href="#" class="product-link">
+            <img
+              src="{{ 'product3.png' | asset_url }}"
+              alt=""
+              class="featured-collection__img">
+          </a>
+        </div>
+        <h4 class="featured-collection__title">Organic Sleepy Body Lotion</h4>
+        <div class="star-reviews">
+          <div class="star-reviews__box">
+            <img
+              src="{{ 'star-icon.svg' | asset_url }}"
+              alt=""
+              class="star-svg">
+            <img
+              src="{{ 'star-icon.svg' | asset_url }}"
+              alt=""
+              class="star-svg">
+            <img
+              src="{{ 'star-icon.svg' | asset_url }}"
+              alt=""
+              class="star-svg">
+            <img
+              src="{{ 'star-icon.svg' | asset_url }}"
+              alt=""
+              class="star-svg">
+            <img
+              src="{{ 'star-icon.svg' | asset_url }}"
+              alt=""
+              class="star-svg">
+          </div>
+          <span class="star-svg__review">76 reviews</span>
+        </div>
+
+        <div class="product-footer">
+          <div class="product-footer__price">
+            <span class="product-footer__off-price">$50
+            </span>
+            <span class="product-footer__regular-price">$39</span>
+          </div>
+          <a href="#" class="add-btn">ADD</a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="view-all-btn load-more-btn">Load More</a>
+  </div>
+</div>
+
+
+{% comment %} FOR Mobile  {% endcomment %}
+<div class="featured-collection-mobile">
+  <div class="featured-collection__heading">
+    <p class="featured-collection__title">Featured collection</p>
+  </div>
+  <div class="featured-collection__product-mobile">
+    {% comment %} single Item {% endcomment %}
+    <div class="featured-collection__item ">
+      <div class="featured-collection__img-box featured-collection__img--first">
+        <a href="#" class="product-link">
+          <img
+            src="{{ 'product1.png' | asset_url }}"
+            alt=""
+            class="featured-collection__img">
+        </a>
+      </div>
+      <h4 class="featured-collection__title">Organic Sleepy Body Lotion</h4>
+      <div class="star-reviews">
+        <div class="star-reviews__box">
+          <img
+            src="{{ 'star-icon.svg' | asset_url }}"
+            alt=""
+            class="star-svg">
+          <img
+            src="{{ 'star-icon.svg' | asset_url }}"
+            alt=""
+            class="star-svg">
+          <img
+            src="{{ 'star-icon.svg' | asset_url }}"
+            alt=""
+            class="star-svg">
+          <img
+            src="{{ 'star-icon.svg' | asset_url }}"
+            alt=""
+            class="star-svg">
+          <img
+            src="{{ 'star-icon.svg' | asset_url }}"
+            alt=""
+            class="star-svg">
+        </div>
+        <span class="star-svg__review">76 reviews</span>
+      </div>
+
+      <div class="product-footer">
+        <div class="product-footer__price">
+          <span class="product-footer__off-price">$50
+          </span>
+          <span class="product-footer__regular-price">$39</span>
+        </div>
+        <a href="#" class="add-btn">ADD</a>
+      </div>
+    </div>
+    {% comment %} single Item {% endcomment %}
+    <div class="featured-collection__item">
+      <div class="featured-collection__img-box">
+        <a href="#" class="product-link">
+          <img
+            src="{{ 'product2.png' | asset_url }}"
+            alt=""
+            class="featured-collection__img">
+        </a>
+      </div>
+      <h4 class="featured-collection__title">Organic Sleepy Body Lotion</h4>
+      <div class="star-reviews">
+        <div class="star-reviews__box">
+          <img
+            src="{{ 'star-icon.svg' | asset_url }}"
+            alt=""
+            class="star-svg">
+          <img
+            src="{{ 'star-icon.svg' | asset_url }}"
+            alt=""
+            class="star-svg">
+          <img
+            src="{{ 'star-icon.svg' | asset_url }}"
+            alt=""
+            class="star-svg">
+          <img
+            src="{{ 'star-icon.svg' | asset_url }}"
+            alt=""
+            class="star-svg">
+          <img
+            src="{{ 'star-icon.svg' | asset_url }}"
+            alt=""
+            class="star-svg">
+        </div>
+        <span class="star-svg__review">76 reviews</span>
+      </div>
+
+      <div class="product-footer">
+        <div class="product-footer__price">
+          <span class="product-footer__off-price">$50
+          </span>
+          <span class="product-footer__regular-price">$39</span>
+        </div>
+        <a href="#" class="add-btn">ADD</a>
+      </div>
+    </div>
+    {% comment %} single Item {% endcomment %}
+    <div class="featured-collection__item">
+      <div class="featured-collection__img-box">
+        <a href="#" class="product-link">
+          <img
+            src="{{ 'product3.png' | asset_url }}"
+            alt=""
+            class="featured-collection__img">
+        </a>
+      </div>
+      <h4 class="featured-collection__title">Organic Sleepy Body Lotion</h4>
+      <div class="star-reviews">
+        <div class="star-reviews__box">
+          <img
+            src="{{ 'star-icon.svg' | asset_url }}"
+            alt=""
+            class="star-svg">
+          <img
+            src="{{ 'star-icon.svg' | asset_url }}"
+            alt=""
+            class="star-svg">
+          <img
+            src="{{ 'star-icon.svg' | asset_url }}"
+            alt=""
+            class="star-svg">
+          <img
+            src="{{ 'star-icon.svg' | asset_url }}"
+            alt=""
+            class="star-svg">
+          <img
+            src="{{ 'star-icon.svg' | asset_url }}"
+            alt=""
+            class="star-svg">
+        </div>
+        <span class="star-svg__review">76 reviews</span>
+      </div>
+
+      <div class="product-footer">
+        <div class="product-footer__price">
+          <span class="product-footer__off-price">$50
+          </span>
+          <span class="product-footer__regular-price">$39</span>
+        </div>
+        <a href="#" class="add-btn">ADD</a>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="view-all-btn">View All</a>
+
+</div>
+{% schema %}
+  {
+    "name": "Featured-collection",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "default": "Multicolumn",
+        "label": "t:sections.multicolumn.settings.title.label"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "Column",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured-collection"
+      }
+    ]
+  }
+{% endschema %}

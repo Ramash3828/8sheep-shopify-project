@@ -1,0 +1,84 @@
+{{ 'hero.css' | asset_url | stylesheet_tag }}
+
+  <div class="hero" style="background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.63),
+      rgba(255, 255, 255, 0.1)
+      ), url({{ 'hero-img.png' | asset_url }})">{% comment %} <div class="hero__overlay"></div>
+  <img
+  src="{{'hero-img.png' | asset_url}}"
+  alt=""
+  class="hero__img"> {% endcomment %}<div class="page-width">
+    <div class="hero__content-box">
+      <h2 class="hero__title">8 Sheep Organics</h2>
+      <p class="hero__text">100% Clean, Natural Pregnancy Products</p>
+      <ul class="hero__list-box">
+        <li class="hero__list-item">
+          <img
+            src="{{ 'list-icon.svg' | asset_url }}"
+            alt=""
+            class="hero__list-icon">
+          Calms and relaxes your body for better sleep
+        </li>
+        <li class="hero__list-item">
+          <img
+            src="{{ 'list-icon.svg' | asset_url }}"
+            alt=""
+            class="hero__list-icon">
+          Relieves lower back and hip pain
+        </li>
+        <li class="hero__list-item">
+          <img
+            src="{{ 'list-icon.svg' | asset_url }}"
+            alt=""
+            class="hero__list-icon">
+          Absorbs quickly and moisturizes your skin
+        </li>
+        <li class="hero__list-item">
+          <img
+            src="{{ 'list-icon.svg' | asset_url }}"
+            alt=""
+            class="hero__list-icon">
+          Try the lotion risk-free, backed by our 60 day money-back guarantee
+        </li>
+      </ul>
+      <p class="hero__text hero__text--bottom">Check out our other organic products, specially made to help pregnant mamas get through their nine months as comfortably as possible!</p>
+
+      <a href="#" class="shop-btn">shop now</a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Hero",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "default": "Multicolumn",
+        "label": "t:sections.multicolumn.settings.title.label"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "Column",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hero"
+      }
+    ]
+  }
+{% endschema %}

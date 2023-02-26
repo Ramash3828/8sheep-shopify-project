@@ -1,0 +1,84 @@
+.testmonial {
+	padding: 40px 0;
+	background: #f5f5f5;
+}
+.testmonial__content {
+	text-align: center;
+}
+.testmonial__top-text {
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 40px;
+	margin-bottom: 30px;
+	color: var(--light-black);
+}
+
+.testmonial__user-count {
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.testmonial__count {
+	color: var(--light-black);
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 40px;
+}
+.testmonial__heading {
+	margin-bottom: 20px;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 36px;
+	color: var(--light-black);
+}
+.testmonial__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: var(--light-black);
+	margin-bottom: 38px;
+}
+.shop-now-btn {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: uppercase;
+	display: grid;
+	place-items: center;
+	width: 300px;
+	height: 65px;
+	color: var(--white);
+	background-color: var(--light-black);
+	border: 1px solid transparent;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+	margin: auto;
+}
+.shop-now-btn:hover {
+	color: var(--light-black);
+	background-color: var(--white);
+	border: 1px solid var(--light-black);
+}
+
+@media screen and (max-width: 768px) {
+	.testmonial__top-text {
+		font-size: 18px;
+		margin-bottom: 0px;
+	}
+	.testmonial__count {
+		font-size: 55px;
+		margin-bottom: 10px;
+	}
+	.testmonial__heading {
+		margin-bottom: 14px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 23px;
+	}
+	.shop-now-btn {
+		width: 100%;
+	}
+}
